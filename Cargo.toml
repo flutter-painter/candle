@@ -16,6 +16,7 @@ exclude = [
    "candle-kernels",
    "candle-metal-kernels",
    "candle-onnx",
+   "marian_candle"
 ]
 resolver = "2"
 
