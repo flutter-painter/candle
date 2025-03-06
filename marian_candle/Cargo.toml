@@ -1,0 +1,18 @@
+[package]
+name = "marian_candle"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0"
+candle-core = { path = "../candle-core" }
+candle-nn = { path = "../candle-nn"}
+candle-examples = { path = "../candle-examples"}
+candle-transformers = { path = "../candle-transformers"}
+clap = { version = "4.0", features = ["derive"] }
+hf-hub = "0.4.1"
+libc = "0.2"
+tokenizers = { version = "0.19.1", default-features = false }
